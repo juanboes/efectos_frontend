@@ -1,0 +1,163 @@
+/*
+#92140C: Sangría
+#19535F: Verde Inglés
+#0B7A75: Pino Verde
+#D7C9AA: Vainilla Oscura
+#F0F3F5: Anti-flash blanco
+*/
+
+html{
+    font-family: 'Comic Neue', cursive;
+}
+
+.container{
+    background: #ED213A;
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    background: linear-gradient(to right, #93291E, #ED213A);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.content{
+    max-width: 960px;
+    height: 80vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative;
+    overflow: scroll;
+}
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    color: #92140C;
+    font-weight: bold;
+}
+th{
+    display: none;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #9B2921;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close:hover{
+    background-color: white;
+    border: 1px solid #9B2921;
+    color: #9B2921;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+}
+
+a{
+    color: #9B2921;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #E5C8C8;
+}
+
+.fa-star{
+    color: #FFC400;
+}
+
+.title-item{
+    border-bottom: solid 2px #92140C;
+    padding-bottom: 1em;
+}
+
+.position{
+    background-color: #92140C;
+    color: #ffffff;
+    padding: 0.8em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.address{
+    font-weight: bold;
+    color: #92140C;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+@media (min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
