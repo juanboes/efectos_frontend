@@ -1,0 +1,45 @@
+html{
+    font-family: Arial, Helvetica;
+}
+
+.hero-image{
+    height: 75vh;
+    background: url('../image/background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2em;
+}
+
+.hero-image h1{
+    font-size: 3em;
+    margin:0;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.hero-image p{
+    font-size: 1.5em;
+    text-shadow: 0px 0px 2px #000;
+}
+.nav{
+    background-color: #37392E;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    /* Navegación por sticky
+    position: sticky;
+    top: -1px;*/
+}
+
+.nav li{
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.nav.pined{
+    position: fixed;
+    top: 0px;;
+}
